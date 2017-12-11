@@ -16,12 +16,16 @@ namespace Landis.Library.Succession
         /// </exception>
         public static SeedingAlgorithms Parse(string word)
         {
-            if (word == "NoDispersal")
-                return SeedingAlgorithms.NoDispersal;
-            else if (word == "UniversalDispersal")
-                return SeedingAlgorithms.UniversalDispersal;
-            else if (word == "WardSeedDispersal")
-                return SeedingAlgorithms.WardSeedDispersal;
+            switch (word)
+            {
+                case "NoDispersal":
+                    return SeedingAlgorithms.NoDispersal;
+                case "UniversalDispersal":
+                    return SeedingAlgorithms.UniversalDispersal;
+                case "WardSeedDispersal":
+                    return SeedingAlgorithms.WardSeedDispersal;
+            }
+
             throw new System.FormatException("Valid algorithms: NoDispersal, UniversalDispersal, WardSeedDispersal");
         }
 

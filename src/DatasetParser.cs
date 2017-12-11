@@ -11,7 +11,7 @@ namespace Landis.Library.InitialCommunities
     public class DatasetParser
         : TextParser<IDataset>
     {
-        private int successionTimestep;
+        private readonly int successionTimestep;
         private ISpeciesDataset speciesDataset;
 
         //private static readonly string name = "Initial Communities";

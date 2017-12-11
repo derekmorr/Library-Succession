@@ -108,8 +108,7 @@ namespace Landis.Library.Succession
         
         private static double GetDispersalProbability(double EffD, double MaxD, double distance)
         {
-            //UI.WriteLine("  Get Dispersal Prob.  EffD = {0}. MaxD = {1}.  Distance = {2}.", EffD, MaxD, distance);
-            double ratio = 0.95;//the portion of the probability in the effective distance
+            double ratio = 0.95; //the portion of the probability in the effective distance
             double lambda1 = Math.Log(1 - ratio) / EffD; //lambda1 parameterized for effective distance
             double lambda2 = Math.Log(0.01) / MaxD;  //lambda2 parameterized for maximum distance
             double distanceProb = 0.0;

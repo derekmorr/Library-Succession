@@ -54,7 +54,6 @@ namespace Landis.Library.Succession
         private static ISpeciesDataset speciesDataset;
         private static ISiteVar<BitArray> resprout;
         private static ISiteVar<BitArray> serotiny;
-        //private static ISiteVar<BitArray> planting;
         private static ISiteVar<bool> noEstablish;
         private static IPlanting planting;
 
@@ -275,19 +274,6 @@ namespace Landis.Library.Succession
                 return;
 
             bool plantingOccurred = planting.TryAt(site);
-            //bool plantingOccurred = false;
-            //for (int index = 0; index < speciesDataset.Count; ++index)
-            //{
-            //    if (planting[site].Get(index))
-            //    {
-            //        ISpecies species = speciesDataset[index];
-            //        if (PlantingEstablish(species, site))
-            //        {
-            //            AddNewCohort(species, site);
-            //            plantingOccurred = true;
-            //        }
-            //    }
-            //}
 
             bool sufficientLight;
 

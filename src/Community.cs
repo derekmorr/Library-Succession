@@ -6,8 +6,8 @@ namespace Landis.Library.InitialCommunities
     public class Community
         : ICommunity
     {
-        private uint mapCode;
-        private List<ISpeciesCohorts> cohorts;
+        private readonly uint mapCode;
+        private readonly List<ISpeciesCohorts> cohorts;
 
         //---------------------------------------------------------------------
 

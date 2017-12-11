@@ -17,7 +17,7 @@ namespace Landis.Library.Succession
         /// </summary>
         public class SpeciesList
         {
-            private BitArray bitArray;
+            private readonly BitArray bitArray;
 
             //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 

@@ -5,7 +5,7 @@ namespace Landis.Library.InitialCommunities
     public class Dataset
         : IDataset
     {
-        private List<ICommunity> communities;
+        private readonly List<ICommunity> communities;
 
         //---------------------------------------------------------------------
 

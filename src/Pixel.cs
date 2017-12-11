@@ -14,7 +14,6 @@ namespace Landis.Library.InitialCommunities
         //---------------------------------------------------------------------
 
         public Pixel(ushort band0)
-        //    : base(band0)
         {
         }
     }

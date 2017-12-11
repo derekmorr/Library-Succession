@@ -12,23 +12,6 @@ namespace Landis.Library.Succession
         private static ISiteVar<int> timeOfLast;
         private static ISiteVar<byte> shade;
         private static ISiteVar<bool> disturbed;
-        /*private static ISiteVar<ISiteCohorts> cohorts;
-
-
-        //---------------------------------------------------------------------
-        
-        internal static ISiteVar<ISiteCohorts> Cohorts
-        {
-            get
-            {
-                return cohorts;
-            }
-
-            set
-            {
-                cohorts = value;
-            }
-        }*/
 
         //---------------------------------------------------------------------
 
